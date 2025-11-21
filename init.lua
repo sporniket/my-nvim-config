@@ -85,7 +85,11 @@ vim.o.tgc = false
 -- TODO :
 -- -- -- -- WITHOUT parameter -- -- -- --
 -- -- <C-q> : exit (equiv ':q')
+vim.keymap.set('i', '<C-q>', '<cmd>quit<CR>', { desc = 'Quit (if possible)'})
+vim.keymap.set('i', '<C-A-q>', '<cmd>quit!<CR>', {desc = 'Quit forcefully'})
 -- -- <C-s> : save
+vim.keymap.set('i', '<C-s>', '<cmd>update<CR>', { desc = 'Save modifications' })
+
 -- -- <C-x> : cut
 -- -- <C-c> : copy
 -- -- <C-v> : paste
