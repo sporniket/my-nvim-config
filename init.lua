@@ -98,4 +98,5 @@ vim.o.tgc = false
 -- TO BE CONTINUED
 
 -- [[ Color scheme ]] --
+vim.cmd([[colorscheme spk-xterm-yaru]])
 
