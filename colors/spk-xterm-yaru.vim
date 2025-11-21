@@ -39,7 +39,7 @@ let g:colors_name = 'spk-xterm-yaru'
 " 0*	DarkGray, DarkGrey
 " 1*	Red, LightRed
 " 2*	Green
-" 3*	Yello, LightYellow
+" 3*	Yellow, LightYellow
 " 4*	Blue
 " 5*	Magenta, LightMagenta
 " 6*	Cyan
@@ -51,43 +51,43 @@ hi! link EndOfBuffer NonText
 hi TermCursor cterm=reverse gui=reverse
 hi! clear TermCursorNC
 hi NonText ctermfg=DarkGray gui=bold guifg=Blue
-hi Directory ctermfg=159 guifg=Cyan
+hi Directory ctermfg=DarkBlue guifg=Cyan
 hi ErrorMsg ctermfg=White ctermbg=DarkRed guifg=White guibg=Red
 hi IncSearch cterm=reverse gui=reverse
-hi Search ctermfg=0 ctermbg=11 guifg=Black guibg=Yellow
+hi Search ctermfg=Black ctermbg=Yellow guifg=Black guibg=Yellow
 hi! link CurSearch Search
-hi MoreMsg ctermfg=121 gui=bold guifg=SeaGreen
+hi MoreMsg ctermfg=DarkGreen gui=bold guifg=SeaGreen
 hi ModeMsg cterm=bold gui=bold
 hi LineNr ctermfg=DarkCyan guifg=Yellow
 hi! link LineNrAbove LineNr
 hi! link LineNrBelow LineNr
-hi CursorLineNr cterm=bold ctermfg=7 gui=bold guifg=Yellow
+hi CursorLineNr cterm=bold ctermfg=Gray gui=bold guifg=Yellow
 hi! link CursorLineSign SignColumn
 hi! link CursorLineFold FoldColumn
-hi Question ctermfg=121 gui=bold guifg=Green
+hi Question ctermfg=DarkGreen gui=bold guifg=Green
 hi StatusLine cterm=bold,reverse gui=bold,reverse
 hi StatusLineNC cterm=reverse gui=reverse
 hi! link WinSeparator VertSplit
 hi! link VertSplit Normal
-hi Title ctermfg=225 gui=bold guifg=Magenta
-hi Visual ctermbg=242 guibg=DarkGrey
+hi Title ctermfg=Magenta gui=bold guifg=Magenta
+hi Visual ctermbg=DarkGray guibg=DarkGrey
 hi! clear VisualNC
-hi WarningMsg ctermfg=224 guifg=Red
-hi WildMenu ctermfg=0 ctermbg=11 guifg=Black guibg=Yellow
-hi Folded ctermfg=14 ctermbg=242 guifg=Cyan guibg=DarkGrey
-hi FoldColumn ctermfg=14 ctermbg=242 guifg=Cyan guibg=Grey
-hi DiffAdd ctermbg=4 guibg=DarkBlue
-hi DiffChange ctermbg=5 guibg=DarkMagenta
-hi DiffDelete ctermfg=12 ctermbg=6 gui=bold guifg=Blue guibg=DarkCyan
-hi DiffText cterm=bold ctermbg=9 gui=bold guibg=Red
-hi SignColumn ctermfg=14 ctermbg=242 guifg=Cyan guibg=Grey
-hi Conceal ctermfg=7 ctermbg=242 guifg=LightGrey guibg=DarkGrey
-hi SpellBad ctermbg=9 gui=undercurl guisp=Red
-hi SpellCap ctermbg=12 gui=undercurl guisp=Blue
-hi SpellRare ctermbg=13 gui=undercurl guisp=Magenta
-hi SpellLocal ctermbg=14 gui=undercurl guisp=Cyan
-hi Pmenu ctermfg=0 ctermbg=13 guibg=Magenta
-hi PmenuSel ctermfg=242 ctermbg=0 guibg=DarkGrey
+hi WarningMsg ctermfg=Red guifg=Red
+hi WildMenu ctermfg=Black ctermbg=Yellow guifg=Black guibg=Yellow
+hi Folded ctermfg=DarkCyan ctermbg=DarkGray guifg=Cyan guibg=DarkGrey
+hi FoldColumn ctermfg=DarkCyan ctermbg=DarkGray guifg=Cyan guibg=Grey
+hi DiffAdd ctermbg=DarkGreen guibg=DarkBlue
+hi DiffChange ctermbg=DarkMagenta guibg=DarkMagenta
+hi DiffDelete ctermfg=DarkRed ctermbg=6 gui=bold guifg=Blue guibg=DarkCyan
+hi DiffText cterm=bold ctermbg=Red gui=bold guibg=Red
+hi SignColumn ctermfg=Cyan ctermbg=Gray guifg=Cyan guibg=Grey
+hi Conceal ctermfg=LightGrey ctermbg=DarkGrey guifg=LightGrey guibg=DarkGrey
+hi SpellBad ctermbg=DarkRed gui=undercurl guisp=Red
+hi SpellCap ctermbg=Blue gui=undercurl guisp=Blue
+hi SpellRare ctermbg=Magenta gui=undercurl guisp=Magenta
+hi SpellLocal ctermbg=Cyan gui=undercurl guisp=Cyan
+hi Pmenu ctermfg=Black ctermbg=Magenta guibg=Magenta
+hi PmenuSel ctermfg=LightGray ctermbg=DarkGrey guibg=DarkGrey
 hi! link PmenuKind Pmenu
 hi! link PmenuKindSel PmenuSel
 hi! link PmenuExtra Pmenu
@@ -99,7 +99,7 @@ hi TabLineSel cterm=bold gui=bold
 hi TabLineFill cterm=reverse gui=reverse
 hi CursorColumn ctermbg=242 guibg=Grey40
 hi CursorLine cterm=bold guibg=Grey40
-hi ColorColumn ctermbg=1 guibg=DarkRed
+hi ColorColumn ctermbg=DarkRed guibg=DarkRed
 hi! link QuickFixLine Search
 hi! link Whitespace NonText
 hi! clear NormalNC
@@ -120,43 +120,43 @@ hi RedrawDebugNormal cterm=reverse gui=reverse
 hi RedrawDebugClear ctermbg=11 guibg=Yellow
 hi RedrawDebugComposed ctermbg=10 guibg=Green
 hi RedrawDebugRecompose ctermbg=9 guibg=Red
-hi Error ctermfg=15 ctermbg=9 guifg=White guibg=Red
-hi Todo ctermfg=0 ctermbg=11 guifg=Blue guibg=Yellow
+hi Error ctermfg=White ctermbg=Red guifg=White guibg=Red
+hi Todo ctermfg=Black ctermbg=Yellow guifg=Blue guibg=Yellow
 hi! link String Constant
-hi Constant ctermfg=13 guifg=#ffa0a0
+hi Constant ctermfg=Magenta guifg=#ffa0a0
 hi! link Character Constant
 hi! link Number Constant
 hi! link Boolean Constant
 hi! link Float Number
-hi! link Function Identifier
-hi Identifier cterm=bold ctermfg=14 guifg=#40ffff
+hi! link Function Statement
+hi Identifier ctermfg=Gray guifg=#40ffff
 hi! link Conditional Statement
-hi Statement ctermfg=11 gui=bold guifg=#ffff60
+hi Statement ctermfg=LightYellow gui=bold guifg=#ffff60
 hi! link Repeat Statement
 hi! link Label Statement
 hi! link Operator Statement
 hi! link Keyword Statement
 hi! link Exception Statement
 hi! link Include PreProc
-hi PreProc ctermfg=81 guifg=#ff80ff
+hi PreProc ctermfg=LightRed guifg=#ff80ff
 hi! link Define PreProc
 hi! link Macro PreProc
 hi! link PreCondit PreProc
 hi! link StorageClass Type
-hi Type ctermfg=121 gui=bold guifg=#60ff60
+hi Type ctermfg=Magenta gui=bold guifg=#60ff60
 hi! link Structure Type
 hi! link Typedef Type
 hi! link Tag Special
-hi Special ctermfg=224 guifg=Orange
+hi Special ctermfg=Green guifg=Orange
 hi! link SpecialChar Special
 hi! link Delimiter Special
 hi! link SpecialComment Special
 hi! link Debug Special
-hi DiagnosticError ctermfg=1 guifg=Red
-hi DiagnosticWarn ctermfg=3 guifg=Orange
-hi DiagnosticInfo ctermfg=4 guifg=LightBlue
-hi DiagnosticHint ctermfg=7 guifg=LightGrey
-hi DiagnosticOk ctermfg=10 guifg=LightGreen
+hi DiagnosticError ctermfg=Red guifg=Red
+hi DiagnosticWarn ctermfg=Yellow guifg=Orange
+hi DiagnosticInfo ctermfg=Blue guifg=LightBlue
+hi DiagnosticHint ctermfg=Gray guifg=LightGrey
+hi DiagnosticOk ctermfg=Green guifg=LightGreen
 hi DiagnosticUnderlineError cterm=underline gui=underline guisp=Red
 hi DiagnosticUnderlineWarn cterm=underline gui=underline guisp=Orange
 hi DiagnosticUnderlineInfo cterm=underline gui=underline guisp=LightBlue
@@ -179,13 +179,13 @@ hi! link DiagnosticSignHint DiagnosticHint
 hi! link DiagnosticSignOk DiagnosticOk
 hi DiagnosticDeprecated cterm=strikethrough gui=strikethrough guisp=Red
 hi! link DiagnosticUnnecessary Comment
-hi Comment ctermfg=6 guifg=#80a0ff
+hi Comment ctermfg=DarkGray guifg=#80a0ff
 hi! clear @text
 hi! link @text.literal Comment
 hi! link @text.reference Identifier
 hi! link @text.title Title
 hi! link @text.uri Underlined
-hi Underlined cterm=underline ctermfg=81 gui=underline guifg=#80a0ff
+hi Underlined cterm=underline ctermfg=Blue gui=underline guifg=#80a0ff
 hi! link @text.underline Underlined
 hi! link @text.todo Todo
 hi! link @comment Comment
@@ -243,9 +243,12 @@ hi! link @lsp.type.struct Structure
 hi! link @lsp.type.type Type
 hi! link @lsp.type.typeParameter Typedef
 hi! link @lsp.type.variable Identifier
-hi MatchParen ctermbg=6 guibg=DarkCyan
-hi Ignore ctermfg=0 guifg=bg
-hi NvimInternalError ctermfg=9 ctermbg=9 guifg=Red guibg=Red
+hi MatchParen ctermbg=DarkCyan guibg=DarkCyan
+hi Ignore ctermfg=DarkGray guifg=bg
+hi NvimInternalError ctermfg=DarkRed ctermbg=Red guifg=Red guibg=Red
+
+" From this point, all the highlight are either linked or cleared
+"
 hi! link NvimAssignment Operator
 hi! link NvimPlainAssignment NvimAssignment
 hi! link NvimAugmentedAssignment NvimAssignment
