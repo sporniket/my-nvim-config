@@ -8,8 +8,6 @@
 
 "[[Overview]]
 "
-"This is a totally not portable theme, targetting terminal colors by NUMBERs.
-"
 "This scheme has been designed while running xterm on Ubuntu with 'Yaru'
 "theme, hence the naming scheme.
 "
@@ -18,13 +16,8 @@
 "To build this theme, I started from spk-xterm-default, then tweaked as I see
 "fit, to get the 'right' color.
 "
-"To constrain things further, I use NR-8 color numbers (0 to 7, optionnally
-"followed by '*' for brighter front colors).
+"To constrain things further, I use name colors corresponding to NR-8 color numbers.
 "
-
-hi clear
-let g:colors_name = 'spk-xterm-yaru'
-
 "[[Reminder : color indexes]]
 "
 " NR-8	Color name
@@ -45,6 +38,9 @@ let g:colors_name = 'spk-xterm-yaru'
 " 6*	Cyan
 " 7*	White
 "
+
+hi clear
+let g:colors_name = 'spk-xterm-yaru'
 
 hi SpecialKey ctermfg=81 guifg=Cyan
 hi! link EndOfBuffer NonText
@@ -129,16 +125,16 @@ hi! link Number Constant
 hi! link Boolean Constant
 hi! link Float Number
 hi! link Function Statement
-hi Identifier ctermfg=Gray guifg=#40ffff
+hi Identifier ctermfg=LightGreen guifg=#40ffff
 hi! link Conditional Statement
-hi Statement ctermfg=LightYellow gui=bold guifg=#ffff60
+hi Statement ctermfg=Yellow gui=bold guifg=#ffff60
 hi! link Repeat Statement
 hi! link Label Statement
 hi! link Operator Statement
 hi! link Keyword Statement
 hi! link Exception Statement
 hi! link Include PreProc
-hi PreProc ctermfg=LightRed guifg=#ff80ff
+hi PreProc ctermfg=Brown guifg=#ff80ff
 hi! link Define PreProc
 hi! link Macro PreProc
 hi! link PreCondit PreProc
@@ -147,7 +143,7 @@ hi Type ctermfg=Magenta gui=bold guifg=#60ff60
 hi! link Structure Type
 hi! link Typedef Type
 hi! link Tag Special
-hi Special ctermfg=Green guifg=Orange
+hi Special ctermfg=DarkRed guifg=Orange
 hi! link SpecialChar Special
 hi! link Delimiter Special
 hi! link SpecialComment Special
